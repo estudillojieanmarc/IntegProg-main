@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Information Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/information.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class = "card-content">
+        <form method="POST" action="../php/customerSignup.php" enctype="multipart/form-data">
+            <h1>Customer Signup</h1>
+            <label class="form-label">Insert Image</label><br>
+            <input required class="form-control" type="file" name="photo">
+            <label class="form-label">Full Name</label>
+            <input required class="form-control" type="text" name="fullname" placeholder="lastname, Firstname Middle Initial">
+            <label class="form-label">Username</label>
+            <input required class="form-control" type="text" name="username">
+            <label class="form-label">Contact</label>
+            <input required class="form-control" type="text" name="contact">
+            <label class="form-label">Address</label>
+            <input required class="form-control" type="text" name="address">
+            <label class="form-label">Password</label>
+            <input required class="form-control" type="text" name="password">
+            <label class="form-label">Confirm Password</label>
+            <input required class="form-control" type="text" name="confirmPassword"> <br>
+            <button type="submit" class="btn" name="customerSignUp">Register</button>
+            <a href="customerLogin.html" type="button" class="btn">Back</a>
+        </form>
+        </div>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        </section>
+        
+
+    </body>
+</html>
